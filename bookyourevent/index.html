@@ -818,7 +818,7 @@ background-color: RGBA(125, 37, 28, 0.15) !important;
   <div kjb-settings-id="sections_1711647217796_blocks_1711647217796_1_settings_text"><h4><span style="color: #64715b;">Ready to book with us or make an event inquiry?</span></h4>
 <p><span style="color: #64715b;">Fill out the form below and we will be in touch within 24 hours. <br /></span><span style="color: #64715b;">We are looking forward to making your event magical!</span></p></div>
   
-    <form data-parsley-validate="true" data-kjb-disable-on-submit="true" action="https://docs.google.com/forms/d/e/1FAIpQLSegxinHBi2cX_liW547UWOOPK4PYfQypIIPx-5UjErx1IwW6Q/formResponse" target="hidden_form" accept-charset="UTF-8" method="post">  
+    <form data-parsley-validate="true" data-kjb-disable-on-submit="true" action="/thank-you-for-form/" data-gf="aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxTZWd4aW5IQmkyY1hfbGlXNTQ3VVdPT1BLNFBZZlF5cElJUHgtNVVqRXJ4MUl3VzZRL2Zvcm1SZXNwb25zZQ==" target="hidden_form" accept-charset="UTF-8" method="post"><div style="position:absolute;left:-9999px" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>  
   <script type="text/javascript">
     (function () {
       try {
@@ -1215,5 +1215,5 @@ background-color: RGBA(125, 37, 28, 0.15) !important;
   /* Custom JS Added Via Theme Settings */
   /* Javascript code goes here */
 </script>
-  <iframe name="hidden_form" style="display:none"></iframe><script>document.querySelectorAll('form[target=hidden_form]').forEach(function(f){f.addEventListener('submit',function(){setTimeout(function(){location.href='/thank-you-for-form/';},800);});});</script></body>
+  <iframe name="hidden_form" style="display:none"></iframe><script>(function(){var t0=Date.now();document.querySelectorAll('form[data-gf]').forEach(function(f){f.addEventListener('submit',function(e){var trap=f.querySelector('input[name=website]');if((trap&&trap.value)||Date.now()-t0<3000){e.preventDefault();location.href='/thank-you-for-form/';return;}trap&&trap.parentNode.removeChild(trap);f.action=atob(f.getAttribute('data-gf'));setTimeout(function(){location.href='/thank-you-for-form/';},800);});});})();</script></body>
 </html>
